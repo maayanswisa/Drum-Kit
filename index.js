@@ -24,15 +24,15 @@ function playSound(key) {
 }
 
 function buttonAnimation(currentKey) {
-  var activeButton = document.querySelector("." +currentKey);
+  var activeButton = document.querySelector("." + currentKey);
 
   if (activeButton) {
     activeButton.classList.add("pressed");
-  }
 
-  setTimeout(function () {
-    activeButton.classList.remove("pressed");
-  }, 100); // האנימציה תרד אחרי 0.1 שניות
+    setTimeout(function () {
+      activeButton.classList.remove("pressed");
+    }, 100);
+  }
 }
 
 // פונקציה שמחזירה את שם הקובץ לפי המקש שנלחץ
