@@ -15,7 +15,7 @@ for (var i = 0; i < numberOfDrumButtons; i++) {
 
 
 document.addEventListener("keydown", function (event) {
-  var key = event.key.toLowerCase();
+  var key = event.key.toLowerCase().trim();
 
   if (playSound(key)) {
     buttonAnimation(key);
