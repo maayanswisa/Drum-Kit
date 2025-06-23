@@ -24,7 +24,7 @@ function playSound(key) {
 }
 
 function buttonAnimation(currentKey) {
-  var activeButton = document.querySelector(currentKey);
+  var activeButton = document.querySelector("." +currentKey);
 
   if (activeButton) {
     activeButton.classList.add("pressed");
