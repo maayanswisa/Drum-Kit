@@ -19,7 +19,7 @@ document.addEventListener("keydown", function (event) {
 // פונקציה שמשמיעה את הצליל המתאים
 function playSound(key) {
   var soundFile = getSoundFile(key);
-  var audio = new Audio("sounds/" + soundFile);
+  var audio = new Audio( soundFile);
   audio.play();
 }
 
